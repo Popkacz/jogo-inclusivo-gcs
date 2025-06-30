@@ -1,0 +1,14 @@
+name: Build APK
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simula checkout do repositório
+        uses: actions/checkout@v2
+      - name: Echo Build
+        run: echo "Gerando APK fictício..."
